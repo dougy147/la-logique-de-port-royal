@@ -1,0 +1,248 @@
+%xelatex
+\documentclass[11pt]{memoir}
+
+\setstocksize{17.5cm}{10.8cm}
+\settrimmedsize{\stockheight}{\stockwidth}{*}
+\setlrmarginsandblock{1.2cm}{1.2cm}{*}
+\setulmarginsandblock{1.2cm}{1.2cm}{*}
+\checkandfixthelayout
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ltablex}
+\usepackage{metalogo}
+
+\emergencystretch 3em
+
+\usepackage{hyperref}
+\usepackage[top=1.5cm,bottom=2.3cm,inner=2.1cm,outer=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter. \ #1}{}}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\fancyfoot[LE,RO]{\thepage}
+
+\usepackage{fontspec}
+\setmainfont{Linux Libertine}
+
+\usepackage{lettrine}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\newcommand{\partdeco}{
+	\begin{center}
+		\includegraphics[scale=0.205]{images/en-tete-partie.png}
+	\end{center}
+}
+
+\newcommand{\finpartdeco}{
+	\bigbreak
+	\begin{center}
+		\includegraphics[scale=0.17]{images/fin-de-partie.png}
+	\end{center}
+}
+
+\newcommand{\chapdeco}{
+	\bigbreak
+	{\centering \includegraphics[scale=0.185]{images/en-tete-chapitre.png}}
+}
+
+\title{LA LOGIQUE OU L'ART DE PENSER: CONTENANT OUTRE LES RÈGLES COMMUNES, PLUSIEURS OBSERVATIONS NOUVELLES, PROPRES À FORMER LE JUGEMENT}
+\author{Antoine Arnauld, Pierre Nicole}
+\date{}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\input{chap/m_pr.tex}
+\newpage
+\thispagestyle{empty}
+
+\input{chap/m_titre.tex}
+\newpage
+\thispagestyle{empty}
+\text{ }
+
+\input{chap/p0_avis.tex}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\input{chap/p0_discours.tex}
+\newpage
+\input{chap/p0_logique.tex}
+\finpartdeco
+
+\partdeco
+\input{chap/p1.tex}
+\chapdeco
+\input{chap/p1_c01.tex}
+\newpage %MEP = mise en page
+\chapdeco
+\input{chap/p1_c02.tex}
+\chapdeco
+\input{chap/p1_c03.tex}
+\chapdeco
+\input{chap/p1_c04.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p1_c05.tex}
+\chapdeco
+\input{chap/p1_c06.tex}
+\chapdeco
+\input{chap/p1_c07.tex}
+\chapdeco
+\input{chap/p1_c08.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p1_c09.tex}
+\chapdeco
+\input{chap/p1_c10.tex}
+\chapdeco
+\input{chap/p1_c11.tex}
+\chapdeco
+\input{chap/p1_c12.tex}
+\finpartdeco
+
+\newpage
+
+\partdeco
+\input{chap/p2.tex}
+\chapdeco
+\input{chap/p2_c01.tex}
+\chapdeco
+\input{chap/p2_c02.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p2_c03.tex}
+\chapdeco
+\input{chap/p2_c04.tex}
+\chapdeco
+\input{chap/p2_c05.tex}
+\chapdeco
+\input{chap/p2_c06.tex}
+\chapdeco
+\input{chap/p2_c07.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p2_c08.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p2_c09.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p2_c10.tex}
+\chapdeco
+\input{chap/p2_c11.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p2_c12.tex}
+\chapdeco
+\input{chap/p2_c13.tex}
+\chapdeco
+\input{chap/p2_c14.tex}
+\chapdeco
+\input{chap/p2_c15.tex}
+\chapdeco
+\input{chap/p2_c16.tex}
+\finpartdeco
+
+\newpage
+
+\partdeco
+\input{chap/p3.tex}
+\chapdeco
+\input{chap/p3_c01.tex}
+\chapdeco
+\input{chap/p3_c02.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p3_c03.tex}
+\chapdeco
+\input{chap/p3_c04.tex}
+\chapdeco
+\input{chap/p3_c05.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p3_c06.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p3_c07.tex}
+\chapdeco
+\input{chap/p3_c08.tex}
+\chapdeco
+\input{chap/p3_c09.tex}
+\chapdeco
+\input{chap/p3_c10.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p3_c11.tex}
+\chapdeco
+\input{chap/p3_c12.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p3_c13.tex}
+\chapdeco
+\input{chap/p3_c14.tex}
+\chapdeco
+\input{chap/p3_c15.tex}
+\chapdeco
+\input{chap/p3_c16.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p3_c17.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p3_c18.tex}
+\newpage
+\partdeco
+
+\input{chap/p4.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p4_c01.tex}
+\chapdeco
+\input{chap/p4_c02.tex}
+\chapdeco
+\input{chap/p4_c03.tex}
+\chapdeco
+\input{chap/p4_c04.tex}
+\chapdeco
+\input{chap/p4_c05.tex}
+\chapdeco
+\input{chap/p4_c06.tex}
+\newpage %MEP
+\chapdeco
+\input{chap/p4_c07.tex}
+\chapdeco
+\input{chap/p4_c08.tex}
+\chapdeco
+\input{chap/p4_c09.tex}
+\chapdeco
+\input{chap/p4_c10.tex}
+\chapdeco
+\input{chap/p4_c11.tex}
+\chapdeco
+\input{chap/p4_c12.tex}
+\chapdeco
+\input{chap/p4_c13.tex}
+\chapdeco
+\input{chap/p4_c14.tex}
+\chapdeco
+\input{chap/p4_c15.tex}
+\newpage
+
+\thispagestyle{empty}
+\mbox{}
+
+\renewcommand*\contentsname{\centering\scshape Table des chapitres de ce livre}
+\tableofcontents*
+
+\newpage
+
+\input{chap/z_colophon.tex}
+\end{document}
